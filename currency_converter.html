@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="curency.css">
+</head>
+<body>
+    <header>
+        <h1>Calculator App</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li><li class="dropdown">
+                    <a href="#" class="dropbtn">🔽</a>
+                    <div class="dropdown-content">
+                        <a href="date.html">Date Calculator</a>
+                    </div>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="converter">
+            <input type="number" id="amount" placeholder="Amount" />
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+                <!-- Add more currencies as needed -->
+            </select>
+            <select id="toCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+                <!-- Add more currencies as needed -->
+            </select>
+            <button onclick="convertCurrency()">Convert</button>
+            <div id="result"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Corner_Tech. All rights reserved.</p>
+    </footer>
+    <script src="ap.js"></script>
+</body>
+</html>
